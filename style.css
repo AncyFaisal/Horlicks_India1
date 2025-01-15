@@ -67,10 +67,10 @@ header {
     color: white;
     font-family: "Poppins", system-ui, sans-serif;
     font-style: normal;
-    font-weight: 800;
-    line-height: 42px;
+    font-weight: 700;
+    line-height: 48px;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 32px;
     cursor: pointer;
 }
 
@@ -83,8 +83,9 @@ header {
 }
 
 .nutrtalk {
-    padding: 20px;
-    margin-left: 0;
+    padding-left: 180px;
+    padding-top: 30px;
+    margin-left: 0px;
     color: blue;
     width: 30%;
     text-decoration: none;
@@ -94,12 +95,15 @@ header {
 }
 
 .after-header .nutrtalk img {
+    
     cursor: pointer;
 }
 
+
 .subscription {
     width: 30%;
-    padding: 20px;
+    padding-left: 130px;
+    padding-top: 30px;
     margin-left: 0;
     color: blue;
     text-decoration: none;
@@ -110,9 +114,10 @@ header {
 
 .searchbar {
     width: 40%;
-    padding: 70px;
+    padding: 70px 0 70px 0;
     height: 180px;
     float: left;
+    background:transparent;
 }
 
 .message {
@@ -186,11 +191,15 @@ input {
     padding-left: 15px;
     padding-right: 50px;
     position: relative;
+    background-color: transparent;
+  
+}
+input::placeholder{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.search-input {
-    background-blend-mode: multiply;
-}
 
 .search-input button {
     position: absolute;
@@ -221,7 +230,8 @@ input {
     height: 250px;
     background-color: white;
     color: blue;
-    padding: 10px;
+    padding-left: 180px;
+ 
     margin-top: 50px;
     font-family: Poppins, system-ui, sans-serif;
     font-size: 12px;
@@ -233,10 +243,20 @@ input {
     line-height: 30px;
 
 }
-
+.footer1 h3{
+    font-size: 14px;
+   
+    font-style: bold;
+    font-weight: 600;
+}
+.footer1 p{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+}
 .product-left {
     height: 210px;
-    width: 25%;
+    width: 22%;
     padding: 10px;
     float: left;
     gap: 20px;
@@ -272,8 +292,9 @@ footer .footer1 li a {
 }
 
 .product-center {
+    
     height: 210px;
-    width: 25%;
+    width: 22%;
 
     float: left;
 }
@@ -287,7 +308,7 @@ footer .footer1 li a {
 
 .support {
     height: 210px;
-    width: 25%;
+    width: 22%;
     float: left;
 
 }
@@ -300,7 +321,7 @@ footer .footer1 li a {
 }
 
 .follow {
-
+margin-top: 40px;
     height: 100px;
     width: 25%;
 
@@ -308,7 +329,7 @@ footer .footer1 li a {
 
 .image-display {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .footer2 {
@@ -317,24 +338,30 @@ footer .footer1 li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
-    color: white;
+    background-color:rgb(0, 17, 134);
+   ;
+    font-size: 14px;
+    font-weight: 500;
 
 }
 
 .unilever {
+    color: white;
     height: 50px;
     width: 40%;
+    padding-left: 180px;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    gap: 10px;
 
 }
 
 .unilever-image {
     height: 50px;
     width: 50px;
+    background:transparent;
 
 }
 
@@ -343,8 +370,12 @@ footer .footer1 li a {
     width: 60%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: right;
+   justify-content:left;
     gap: 20px;
+    padding-left: 360px;
+    font-size: 8px;
+    font-weight: 500;
 
 }
 
@@ -355,23 +386,16 @@ footer .footer1 li a {
 .footer2 .privacy i {
     height: 20px;
     width: 20px;
+    font-size: 10px;
 }
 
 .gradient-icon {
-    font-size: 20px;
-    /* Set icon size to 20px */
-    color: transparent;
-    /* Make icon text transparent */
-    background: rgb(255, 83, 0);
-    /* Apply the orange gradient */
-    -webkit-background-clip: text;
-    /* Clip the background to the text (required for WebKit browsers like Chrome) */
-    background-clip: text;
-    /* For other browsers */
-    display: inline-block;
-    /* Ensure proper rendering */
-    transition: transform 0.1s ease;
-    /* Small hover effect */
+     color: transparent;
+     background: rgb(255, 83, 0);
+     -webkit-background-clip: text;
+      background-clip: text;
+      display: inline-block;
+     transition: transform 0.1s ease;
 }
 
 .gradient-icon:hover {
@@ -379,6 +403,6 @@ footer .footer1 li a {
 }
 
 .gradient-icon {
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(255, 83, 0)
 }
